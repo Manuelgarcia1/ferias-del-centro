@@ -1,0 +1,242 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Secular+One&display=swap');
+
+.imagen-nav {
+  position: relative;
+  height: 50rem;
+}
+
+.imagen-nav img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar-container {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+
+.imagen-nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.523);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navbar-icon {
+  height: 70px;
+  width: 70px;
+
+}
+
+.Navbar a {
+  margin: 0 10px;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-bottom: none;
+  color: #3a3a3a;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.Navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.705);
+  padding: 10px 16px;
+  border-radius: 4px;
+}
+
+.Navbar.hidden {
+  display: none;
+}
+
+.MobileNavbar {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.523);
+  z-index: 2;
+}
+
+.MobileNavbar a {
+  background-color: transparent;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+
+.hamburger-menu .line {
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: transform 0.3s ease;
+}
+
+.hamburger-menu.active .line.line1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-menu.active .line.line2 {
+  opacity: 0;
+}
+
+.hamburger-menu.active .line.line3 {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+
+.carousel-container {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  outline: none;
+  padding: 4px;
+  /* Agrega estilos adicionales según tus necesidades */
+}
+
+.carousel-arrow.prev {
+  left: 20px;
+  border-radius: 25%;
+}
+
+.carousel-arrow.next {
+  right: 20px;
+  border-radius: 25%;
+
+}
+
+
+.carousel-item {
+  color: #ffffffce;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.carousel-image{
+  width: 40px !important; 
+  height: 40px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.carousel-title{
+  font-family: 'Secular One', sans-serif;
+  font-size: 50px;
+  margin-top: 120px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.carousel-description{
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.carousel-ubicacion{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+
+button, input, optgroup, select, textarea {
+  padding: 12px;
+  font-size: 30px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.carousel-arrow:hover{
+  background-color:rgba(255, 255, 255, 0.523);
+  border-radius: none;
+  cursor: pointer;
+}
+
+.fas, .fa-solid {
+  color: white;
+  font-weight: 900;
+  font-size: 45px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 500px) {
+  .Navbar {
+    display: none;
+  }
+
+  .mobile-icon{
+    position: absolute;
+    left: 0;
+    width: 60px;
+    height: 60px;
+  }
+
+  .MobileNavbar {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
