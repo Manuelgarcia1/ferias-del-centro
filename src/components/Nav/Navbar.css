@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Secular+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100&family=Secular+One&display=swap');
@@ -28,7 +32,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(0 0 0 / 25%);
+  background-color: rgb(0 0 0 / 48%);
 }
 
 .Navbar {
@@ -43,7 +47,7 @@
 }
 
 .navbar-icon {
-  height: 70px;
+  height: 60px;
   margin-left: 90px;
 }
 
@@ -62,12 +66,12 @@
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
   transition: background-color 0.3s ease;
+  border-radius: 4px;
 }
 
 .Navbar a:hover {
-  background-color: rgba(255, 255, 255, 0.705);
-  padding: 10px 16px;
-  border-radius: 4px;
+  background-color: #b5b5b5;
+ 
 }
 
 .Navbar.hidden {
@@ -82,8 +86,9 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.523);
+  background-color: #233C36;
   z-index: 2;
+  
 }
 
 .MobileNavbar a {
@@ -102,7 +107,7 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 3;
 }
 
 
@@ -144,6 +149,7 @@
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
+  margin-top: 15px;
 }
 
 .carousel .slide img{
@@ -182,21 +188,52 @@
 }
 
 
-.carousel-image{
+.fas-carousel-icon{
   width: 60px !important; 
-  height: 60px !important;
- 
+  height:60px !important;
+
 }
+
+.fa-map-marker-alt{
+  margin-left: 15px;
+  width: 40px;
+  height:50px !important;
+  color: #E7DDC4 !important;
+  font-size: 40px !important;
+  display: flex;
+  align-items: center;
+}
+
 
 
 .carousel-description{
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   position: relative;
-  bottom: 55px;
+  bottom: 60px;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 18px;
+}
+
+.button-remate {
+  background-color: transparent;
+  /* border: 10px; */
+  /* appearance: button; */
+  position: absolute;
+  bottom: 8px;
+  padding: 8px 35px;
+  text-decoration: none;
+  margin: 20px;
+  border-radius: 4px;
+  background-color: #E7DDC4;
+  /* font-family: 'Poppins'; */
+  font-weight: 500;
+  color: black;
+  cursor: pointer;
+}
+.button-remate:hover {
+  background-color: #c3b1839f;
 }
 
 .carousel-ubicacion{
@@ -224,7 +261,7 @@ button, input, optgroup, select, textarea {
 }
 
 .carousel-arrow:hover{
-  background-color:#233C36;
+  background-color:#b5b5b5;
   border-radius: none;
   cursor: pointer;
 }
@@ -239,11 +276,46 @@ button, input, optgroup, select, textarea {
   display: none;
 }
 
+
+@media (max-width: 1000px) {
+  .navbar-icon {
+    height: 40px;
+    margin-left: 0;
+  }
+  .Navbar a{
+    padding: 0;
+  }
+  .carousel-ubicacion{
+    margin-left:20px;
+  }
+  .Navbar a:hover{
+    background-color: transparent;
+  }
+
+  .navbar-section{
+    margin-right: 20px;
+  }
+}
+
 /* Estilos para dispositivos móviles */
-@media (max-width: 500px) {
+@media (max-width: 550px) {
+
+  .imagen-nav{
+    height: 40rem;
+  }
   .Navbar {
     display: none;
   }
+
+  .navbar-container{
+    background-color: #233C36;
+    height: 60px;
+  }
+
+  .carousel-item{
+    margin-top: 70px;
+  }
+  
 
   .mobile-icon{
     position: absolute;
@@ -261,15 +333,21 @@ button, input, optgroup, select, textarea {
   }
 
   .carousel .slide img{
-    width: 80%;
+    width: 92%;
     height: auto;
   }
 
   .carousel-ubicacion{
-    margin-top: 20px;
-    font-size: 2.4vw;
-    left: 5.4%;
+    margin-top: 10px;
+    margin-left: 38px;
     bottom: 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  .carousel-ubicacion h4{
+    font-size: 16px;
+    font-family: none;
   }
 
   .carousel-bolivar{
@@ -280,12 +358,18 @@ button, input, optgroup, select, textarea {
     margin-top: 26px;
     width: 40px !important; 
     height: 40px !important;
-   
+  }
+  .fa-map-marker-alt{
+    width: 20px;
+    font-size: 25px !important;
+    margin-top: 10px;
   }
 
   .carousel-description {
     font-size: 3.5vw;
-    bottom: 65px;
+    bottom: 80px;
+    font-family: none;
+   
   }
 
   .carousel-arrow {
@@ -313,8 +397,8 @@ button, input, optgroup, select, textarea {
 
   .navbar-icon-mobile {
     display: block;
-    height: 8vw;
-    margin-left: 0;
-    margin-top: 3.2vw;
+    height: 10vw;
+    margin-left: 10px;
+    margin-top: 10px;
   }
 }

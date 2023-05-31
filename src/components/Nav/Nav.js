@@ -1,11 +1,12 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef} from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './Navbar.css';
-import vacasImage from '../../images/vacas.jpg';
+import vacasImage from '../../images/vacas1.jpg';
 import navbar from '../../images/Logo-navbar.png';
 import mapas from '../../images/ubicacion.png'
 import carousel from '../../images/Logo-main.png'
+
 
 const carouselTexts = [
   {
@@ -16,22 +17,18 @@ const carouselTexts = [
   },
   {
     image: carousel,
-    text2: 'Somos una empresa con más de 40 años de trayectoria,<br /> buscando día a día ofrecer el mejor servicio <br /> de comercialización de hacienda.',
+    text2: 'Tu confianza garantizada en remates de vaquillonas. <br /> Nuestros servicios están diseñados para  satisfacer <br /> tus necesidades,  brindándote tranquilidad <br /> y resultados sobresalientes..',
     image2: mapas,
     ubi: 'San Carlos de Bolívar',
   },
   {
     image: carousel,
-    text2: 'Somos una empresa con más de 40 años de trayectoria,<br /> buscando día a día ofrecer el mejor servicio <br /> de comercialización de hacienda.',
+    text2: 'Expertos en el manejo especializado de haciendas y remates de vaquillonas. <br /> Nuestra dedicación nos distingue, ofreciendo soluciones efectivas <br /> y rentables para tu ganadería.',
     image2: mapas,
     ubi: 'San Carlos de Bolívar',
   },
-  {
-    image: carousel,
-    text2: 'Somos una empresa con más de 40 años de trayectoria,<br /> buscando día a día ofrecer el mejor servicio <br /> de comercialización de hacienda.',
-    image2: mapas,
-    ubi: 'San Carlos de Bolívar',
-  },
+
+  
 ];
 
 function Nav() {
@@ -56,22 +53,12 @@ function Nav() {
     setMenuVisible(false);
   };
 
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (navRef.current && !navRef.current.contains(event.target)) {
-        closeMenu();
-      }
-    };
+  
 
-    document.addEventListener('mousedown', handleClickOutside);
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
+  
   return (
     <main>
-      <div className="imagen-nav">
+      <div className="imagen-nav" id='Inicio'>
         <img src={vacasImage} alt="vacas" />
         <div className="carousel-container">
           <Carousel
@@ -90,10 +77,11 @@ function Nav() {
               <div key={index} className="carousel-item">
                 <img className="carousel-title" src={item.image} alt='carouselimg' />
                 <div className="carousel-ubicacion">
-                  <img className="carousel-image" src={item.image2} alt="Imagen" />
-                  <h4 className="carousel-bolivar">{item.ubi}</h4>
+                  <i className="fas fa-map-marker-alt"></i>
+                  <h4 className="carousel-bolivar">{item.ubi}</h4>  
                 </div>
                 <p className="carousel-description" dangerouslySetInnerHTML={{ __html: item.text2 }}></p>
+                <a href='#Remates' className='button-remate'>Ver remates</a>
               </div>
             ))}
           </Carousel>
@@ -106,22 +94,22 @@ function Nav() {
         </div>
       </div>
       <div className="navbar-container">
-        <nav ref={navRef} className={`Navbar ${menuVisible ? 'hidden' : ''}`}>
-          <div className='logo-nav'>
+        <nav href={navRef} className={`Navbar ${menuVisible ? 'hidden' : ''}`}>
+          <div  className='logo-nav'>
             <img className='navbar-icon' src={navbar} alt="icono" />
           </div>
           <div className='navbar-section'>
-            <a href="/">Inicio</a>
+            <a href="#Inicio">Inicio</a>
             <a href="/">Nosotros</a>
-            <a href="/">Remates</a>
+            <a href="#Remates">Remates</a>
             <a href="/">Contacto</a>
           </div>
         </nav>
         {menuVisible && (
           <nav className="MobileNavbar">
-            <a href="/">Inicio</a>
+            <a href="#Inicio">Inicio</a>
             <a href="/">Nosotros</a>
-            <a href="/">Remates</a>
+            <a href="#Remates">Remates</a>
             <a href="/">Contacto</a>
           </nav>
         )}

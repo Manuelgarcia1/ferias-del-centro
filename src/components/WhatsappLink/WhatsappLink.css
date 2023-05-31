@@ -1,0 +1,44 @@
+.button-container {
+    position: fixed;
+    right: 30px ;
+    bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    z-index: 9999;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .message {
+    background: #25D366;
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+  
+  .button-container:hover .message {
+    background: #128C7E;
+    /* Otros estilos adicionales al pasar el mouse */
+  }
+  
+  @media (max-width: 700px) {
+
+    .button-container{
+      right: 10px;
+    }
+
+    .message{
+      font-size: 10px;
+    }
+  }
