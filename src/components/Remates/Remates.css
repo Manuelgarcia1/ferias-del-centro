@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300&family=Secular+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pacifico&family=Poppins:wght@300&family=Secular+One&display=swap');
+
 
 
 html {
@@ -9,12 +11,13 @@ html {
   }
 
   .title-remates {
-    margin-left: 20px;
+    position: relative;
+    left: 20px;
     opacity: 0;
-    transform: translateX(-100%);
+    transform: translateX(-50%);
     transition: opacity 1s ease-out, transform 1s ease-out;
     font-family: 'Poppins', sans-serif;
-    text-align: center;
+   
   }
   
   .title-remates-visible {
@@ -22,78 +25,77 @@ html {
     transform: translateX(0);
   }
 
-.card {
+.card{
   display: flex;
-  /*justify-content: space-between; */
-  background-color: #ffff;
-  /* margin-left: 40px; */
-  /* margin-right: 40px; */
-  margin-top: 20px;
+  flex-direction: row;
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  background-color: #faebd7ad;
+}
+
+.card h4{
+  font-family: 'poppins';
+}
+
+.content-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+}
+
+.content-img h4 {
+  margin: 0; /* Elimina el margen */
+}
+
+.content-img .cantidad{
+  font-size: 90px;
+  font-family: 'poppins';
+  color: white;
+}
+
+.content-img .vacunos{
+  font-size: 40px;
+  font-family: 'poppins';
+  color: white;
   position: relative;
-  /* top: 50%; */
-  left: 50%;
-  /* right: 50%; */
-  border-radius: 10px;
-  height: 300px;
-  width: 70%;
-  transform: translate(-50%, 0%);
-  /* margin: 0 auto*/;
+  bottom: 14px;
 }
-
-.card-image {
-    margin-right: 10px;
-    height: 100%;
-    position: relative;
-    display: flex;
-}
-
-.card-image img {
-    width: 445px;
-    border-radius: 10px;
-    height: 100%;
-   position: relative;
-}
-
-.card-image .texto-cantidad {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 100px;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 800;
-}
-.card-image .texto-vacunos {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 48px;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 800;
-  font-family:'Poppins';
-  width: auto;
-}
-.card-image .texto-footer {
-  position: absolute;
-  top: 82%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 14px;
-  color: white;
-  font-weight: bold;
-  font-family: 'Poppins', sans-serif;
-  width: auto;
+.content-img .tipo {
+  font-size: 12px;
+  font-family: 'poppins';
   color: #233C36;
-  background-color:#efd79b;
+  background-color: #efd79b;
   border-radius: 4px;
-  padding: 3px;
+  list-style: disc inside none;
+  position: relative;
+  bottom: 10px;
 }
 
-.card-image .texto-footer::before,
-.card-image .texto-footer::after {
+.content-img .tipo::before {
+  content: "\2022"; /* Código de punto unicode */
+  padding: 2px;
+ 
+}
+
+.content-img .tipo::after {
+  content: "\2022"; /* Código de punto unicode */
+  padding: 2px;
+ 
+}
+
+.content-img .tipo::before,
+.card-img .tipo::after {
   content: "\2022";
   color: #233C36; /* color de los puntos */
   font-weight: bold;
@@ -102,7 +104,133 @@ html {
   text-align: center;
 }
 
+.card-column1{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center; /* Alinea el contenido verticalmente al centro */
+  align-items: center;
+  
+}
 
+.card-column2{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card-img{
+  width: 600px;
+  border-radius: 10px;
+  height: 100%;
+  
+}
+
+.row1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.row1-remates h4{
+  margin: 0;
+}
+
+.row1-remates .remate-feria{
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+.row1-remates .remate-mensual{
+  text-align:end;
+  font-size: 24px;
+  font-family: 'Kaushan Script', cursive;
+  color:#233C36;
+  
+}
+
+
+.row1-fecha{
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.row1-fecha h4{
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.row2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 100px;
+  justify-content: space-between;
+  margin-right: 80px;
+  margin-left: 100px;
+}
+
+
+
+.row2 .destacamos{
+  font-size: 20px;
+  color: #233C36;
+  text-transform: uppercase;
+  font-family: 'Kaushan Script', cursive;
+  margin: 0;
+}
+
+.row2 .importante{
+  text-align: center;
+  background-color:#233C36;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  margin: 4px;
+}
+
+.row3{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 25px;
+ 
+}
+
+.column1, .column2, .column3{
+  margin: 0 30px;
+  display: flex;
+  align-items: center;
+}
+
+.column1 img, .column2 img, .column3 img{
+  width: 25px;
+  height: 25px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.row4{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.boton-remate{
+  background-color: #233C36;
+  border-radius: 40px;
+  padding: 12px;
+  color: white;
+}
+
+.boton-remate:hover{
+  cursor: pointer;
+}
 
 
 
