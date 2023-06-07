@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100&family=Secular+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300&family=Secular+One&display=swap');
+
+
+
 html {
     scroll-behavior: smooth;
   }
@@ -19,33 +23,88 @@ html {
   }
 
 .card {
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-    background-color: #ffff;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 20px;
-    
-    /* position: absolute; */
-    /* top: 50%; */
-    left: 50%;
-    border-radius: 10px;
-    height: 300px;
-    /* transform: translate(-50%, -50%); */
-    /* margin: 0 auto; */
+  display: flex;
+  /*justify-content: space-between; */
+  background-color: #ffff;
+  /* margin-left: 40px; */
+  /* margin-right: 40px; */
+  margin-top: 20px;
+  position: relative;
+  /* top: 50%; */
+  left: 50%;
+  /* right: 50%; */
+  border-radius: 10px;
+  height: 300px;
+  width: 70%;
+  transform: translate(-50%, 0%);
+  /* margin: 0 auto*/;
 }
 
 .card-image {
     margin-right: 10px;
     height: 100%;
+    position: relative;
+    display: flex;
 }
 
 .card-image img {
     width: 445px;
     border-radius: 10px;
     height: 100%;
+   position: relative;
 }
+
+.card-image .texto-cantidad {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+.card-image .texto-vacunos {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-family:'Poppins';
+  width: auto;
+}
+.card-image .texto-footer {
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  width: auto;
+  color: #233C36;
+  background-color:#efd79b;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+.card-image .texto-footer::before,
+.card-image .texto-footer::after {
+  content: "\2022";
+  color: #233C36; /* color de los puntos */
+  font-weight: bold;
+  display: inline-block;
+  width: 15px;
+  text-align: center;
+}
+
+
+
+
 
 @media (max-width: 700px) {
   .title-remates-visible {

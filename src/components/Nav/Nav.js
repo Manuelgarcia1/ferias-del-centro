@@ -17,13 +17,13 @@ const carouselTexts = [
   },
   {
     image: carousel,
-    text2: 'Tu confianza garantizada en remates de vaquillonas. <br /> Nuestros servicios están diseñados para  satisfacer <br /> tus necesidades,  brindándote tranquilidad <br /> y resultados sobresalientes..',
+    text2: 'Tu confianza garantizada en nuestros servicios. <br /> diseñados para  satisfacer tus necesidades,<br />  brindándote resultados sobresalientes..',
     image2: mapas,
     ubi: 'San Carlos de Bolívar',
   },
   {
     image: carousel,
-    text2: 'Expertos en el manejo especializado de haciendas y remates de vaquillonas. <br /> Nuestra dedicación nos distingue, ofreciendo soluciones efectivas <br /> y rentables para tu ganadería.',
+    text2: 'Expertos en el manejo especializado de haciendas y remates. <br /> Nuestra dedicación nos distingue, ofreciendo soluciones <br />  efectivas y rentables para tu ganadería.',
     image2: mapas,
     ubi: 'San Carlos de Bolívar',
   },
