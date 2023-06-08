@@ -1,10 +1,18 @@
+
+
 import React, { useEffect, useRef } from 'react';
+
 import './Remates.css';
 import rematesimg from '../../images/Imagen-card.jpg';
 import ubi from '../../images/ubi-remates.png'
 import calendario from '../../images/calendario-remates.png'
 import hora from '../../images/hora-remates.png'
 import venta from '../../images/venta-remates.png'
+import remates from '../../images/remates.svg'
+import iconvaca from '../../images/iconvaca.png'
+
+
+
 
 
 const Card = () => {
@@ -28,9 +36,12 @@ const Card = () => {
   }, []);
 
   return (
-    <div>
-      <h1 ref={titleRef} className='title-remates' id='Remates' >Nuestros remates</h1>
-      <div className="card" >
+      <div>
+        <h1 ref={titleRef} className='title-remates' id='Remates'>
+          <img className='icon-vaca' src={iconvaca} alt="Descripción de la imagen" />
+            Remates mensuales
+        </h1>
+        <div className="card" >
           <div className='card-column1'>
             <img className='card-img' src={rematesimg} alt='fondocard'></img>
             <div className='content-img'>
@@ -46,7 +57,7 @@ const Card = () => {
                 <h4 className='remate-mensual'>Mensual</h4> 
               </div>
               <div className='row1-fecha'> 
-                  <img src={calendario} alt="Calendario" />
+                  <img src={calendario} className='calendario-img' alt="Calendario" />
                   <h4>30 de Junio</h4>
               </div>
             </div>
@@ -77,16 +88,8 @@ const Card = () => {
               <h4 className='boton-remate'>Ver remate</h4>
             </div>
           </div>
-      </div>
-
-      <div className='row1'>
-              <div className='row1-remateferia'>
-                <h4>Remate Feria</h4>
-                <h4>Mensual</h4> 
-              </div>
-      </div>
-   
-      {/* Agrega más tarjetas aquí */}
+        </div>
+        <img className='img-footer-remates' src={remates} alt='imagen-remates'></img>   
     </div>
   );
 };
