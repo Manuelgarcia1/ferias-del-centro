@@ -102,7 +102,7 @@ function Nav() {
             <a href="#Inicio">Inicio</a>
             <a href="/">Nosotros</a>
             <a href="#Remates">Remates</a>
-            <a href="/">Contacto</a>
+            <a href="#Contacto">Contacto</a>
           </div>
         </nav>
         {menuVisible && (
@@ -110,7 +110,7 @@ function Nav() {
             <a href="#Inicio">Inicio</a>
             <a href="/">Nosotros</a>
             <a href="#Remates">Remates</a>
-            <a href="/">Contacto</a>
+            <a href="#Contacto">Contacto</a>
           </nav>
         )}
         <img className='navbar-icon-mobile' src={navbar} alt="icono" />

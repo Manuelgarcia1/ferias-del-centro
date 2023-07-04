@@ -1,0 +1,85 @@
+footer{
+    background-color: #212827;
+    height: 140px;
+    width: 100%;
+}
+
+.footer-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-column1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.footer-column2{
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.img-footer{
+    width: 250px;
+    height: auto;
+}
+
+.derechosreservados{
+    color: white;
+    font-family: 'poppins';
+    font-weight: 400;    
+}
+
+
+
+.nuestrasredes{
+    margin: 4px;
+    color: white;
+    font-family: 'poppins';
+    text-align: center;
+}
+
+.img-ig, .img-facebook, .img-mail{
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 40px;
+    height: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+
+
+.designer-footer, .developer-footer{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'poppins';
+    cursor: pointer;
+}
+
+.designer-img, .developer-img{
+    margin-right: 5px;
+}
+
+
+.footer2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: #161616e6;
+    height: 52px;
+    
+}
+
+.footer2-nombres{
+    display: flex;
+    gap: 5px;
+}

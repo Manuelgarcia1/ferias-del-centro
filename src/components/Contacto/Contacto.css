@@ -1,0 +1,154 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.title-contacto {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
+  
+.title-contacto-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.row-contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+
+.column1-contacto{
+    display: flex;
+    flex-direction: column;
+}
+
+.column1-contacto form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.column1-contacto .column1-contacto-row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+input, textarea{
+    padding: 12px;
+    font-size: 15px !important;
+    margin-left:0 !important;
+    margin-right: 0 !important;
+    font-family:'poppins';
+    font-weight: bold;
+    font-family: 'poppins' !important;
+    border: none !important;
+}
+
+input:focus, textarea:focus {
+    border-color: #233C36; /* Cambia el color del borde al hacer clic */
+    outline: none; /* Elimina el borde de enfoque predeterminado */
+    box-shadow: 0 0 0 2px rgba(76, 163, 143, 0.665); /* Agrega un resaltado alrededor del input */
+  }
+
+
+textarea{
+    height: 245px;
+    width: 94%;
+}
+
+button, input {
+    overflow: visible;
+    list-style: none;
+    height: 14px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+textarea {
+    padding: 12px;
+    border-radius: 10px;
+    /* font-size: 30px !important; */
+    /* margin-left: auto !important; */
+    /* margin-right: auto !important; */
+    /* font-family: 'poppins'; */
+    /* font-weight: bold; */
+}
+textarea:focus {
+    outline: none; /* Elimina el borde al hacer clic */
+  }
+
+input[type="submit"] {
+    width: fit-content; /* Ajusta el ancho al contenido */
+    margin-left: auto; /* Centra horizontalmente */
+    margin-right: auto; /* Centra horizontalmente */
+  }
+  
+  button,
+  input[type="submit"] {
+    cursor: pointer;
+    border: none;
+    overflow: visible;
+    list-style: none;
+    height: 35px;
+    outline: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #233C36;
+    padding: 8px 20px; /* Ajusta el padding según tus preferencias */
+    font-size: 15px; /* Tamaño de fuente */
+    font-family: 'Poppins', sans-serif; /* Fuente */
+    font-weight: bold; /* Peso de la fuente */
+  }
+
+
+.logoform{
+    width: 240px;
+}
+
+.description-form{
+    font-family: 'poppins';
+    color: #233C36;
+    margin: 0;
+}
+
+.saludos-form{
+    font-family: 'poppins';
+    color: #233C36;
+    margin: 15px 0;
+}
+
+.informacion-contacto h4 {
+    font-family: 'Poppins';
+    color: #233C36;
+    display: flex;
+    align-items: center;
+}
+
+.informacion-contacto img {
+    margin-right: 8px;
+}
+
+.toast-container {
+    width: 100%;
+    
+  }
+  
+  .toast-success {
+    background-color: #32CD32;
+  }

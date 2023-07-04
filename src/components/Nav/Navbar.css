@@ -1,6 +1,4 @@
-html {
-  scroll-behavior: smooth;
-}
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Secular+One&display=swap');
@@ -213,7 +211,7 @@ html {
 
 .fa-map-marker-alt{
   margin-left: 15px;
-  width: 40px;
+  width: 35px;
   height:50px !important;
   color: #efd79b !important;
   font-size: 35px !important;
@@ -229,8 +227,9 @@ html {
   position: relative;
   bottom: 60px;
   font-family: 'Poppins', sans-serif;
-  font-weight: bold;
+  
   font-size: 18px;
+  color: #ffff;
 }
 
 .button-remate {
@@ -263,6 +262,7 @@ html {
 .carousel-ubicacion h4{
   color: #efd79b;
   font-size: 18px;
+  font-family: 'poppins';
 }
 
 button, input, optgroup, select, textarea {
@@ -270,6 +270,8 @@ button, input, optgroup, select, textarea {
   font-size: 30px !important;
   margin-left: auto !important;
   margin-right: auto !important;
+  font-family: 'poppins';
+  font-weight: bold;
 }
 
 .carousel-arrow:hover{
@@ -296,11 +298,16 @@ button, input, optgroup, select, textarea {
   .Navbar a{
     padding: 0;
   }
+  .Navbar a:hover::after {
+    background-size: 0;
+  }
+  
   .carousel-ubicacion{
     margin-left:20px;
   }
   .Navbar a:hover{
     background-color: transparent;
+    
   }
 
   .navbar-section{

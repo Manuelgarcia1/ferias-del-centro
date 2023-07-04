@@ -1,7 +1,4 @@
-
-
 import React, { useEffect, useRef } from 'react';
-
 import './Remates.css';
 import rematesimg from '../../images/Imagen-card.jpg';
 import ubi from '../../images/ubi-remates.png'
@@ -10,14 +7,16 @@ import hora from '../../images/hora-remates.png'
 import venta from '../../images/venta-remates.png'
 import remates from '../../images/remates.svg'
 import iconvaca from '../../images/iconvaca.png'
+import RemateMain from '../Rematemain/Rematemain.js';
 
 
 
 
 
-const Card = () => {
+  const Card = () => {
   const titleRef = useRef(null);
-
+  
+  
   useEffect(() => {
     const revealTitle = () => {
       const title = titleRef.current;
@@ -85,11 +84,12 @@ const Card = () => {
               </div>
             </div>
             <div className='row4'>
-              <h4 className='boton-remate'>Ver remate</h4>
+              <h4 className='boton-remate'  >Ver remate</h4>
             </div>
           </div>
         </div>
-        <img className='img-footer-remates' src={remates} alt='imagen-remates'></img>   
+        <img className='img-footer-remates' src={remates} alt='imagen-remates'></img>
+        
     </div>
   );
 };

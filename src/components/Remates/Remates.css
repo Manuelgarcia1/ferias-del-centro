@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100&family=Secular+One&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300&family=Secular+One&display=swap');
+
 
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pacifico&family=Poppins:wght@300&family=Secular+One&display=swap');
 
-
-
-
-html {
-    scroll-behavior: smooth;
-  }
 
   .icon-vaca{
     width: 45px;
@@ -25,6 +19,7 @@ html {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    font-size: 30px;
    
   }
   
@@ -177,6 +172,7 @@ html {
     color: #233C36;
     text-transform: uppercase;
     margin: 0;
+    font-style: italic;
   }
   
   .row2 .importante {
@@ -231,6 +227,7 @@ html {
   
   .boton-remate:hover {
     cursor: pointer;
+    color: #ffff;
     background-color:#233C36;
     opacity: 0.9;
   }
@@ -290,19 +287,24 @@ html {
     display: flex;
     flex-direction: column;
   }
+
   .content-img .cantidad {
-    font-size: 4rem;
+    font-size: 4.4rem;
     margin: 0;
+    position: relative;
+    top: 15px;
   }
 
   .content-img .vacunos {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     margin: 0;
   }
   .content-img .tipo {
     font-size: 0.6rem; 
     margin: 0;
-  } 
+    position: relative;
+    bottom:15px;
+  }     
 
 }
 
@@ -320,25 +322,31 @@ html {
     display: flex;
     flex-direction: column;
   }
+
+  .card-img{
+    height: 200px;
+  }
   .card h4 {
     margin: 5px 0;
     font-size: 0.6rem;
   }
-  .card-column1{
-    height: 250px;
-  }
+  
   .content-img .cantidad {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin: 0;
+    position: relative;
+    top: 10px;
   }
 
   .content-img .vacunos {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin: 0;
   }
   .content-img .tipo {
     font-size: 0.6rem;
-     margin: 0;
+     
+    position: relative;
+    bottom:15px;
   } 
   .row1 {
     margin-left: 4%;
