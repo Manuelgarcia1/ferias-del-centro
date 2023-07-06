@@ -7,15 +7,15 @@ import hora from '../../images/hora-remates.png'
 import venta from '../../images/venta-remates.png'
 import remates from '../../images/remates.svg'
 import iconvaca from '../../images/iconvaca.png'
-import RemateMain from '../Rematemain/Rematemain.js';
-
-
-
-
+import importante from '../../images/importante.svg'
 
   const Card = () => {
   const titleRef = useRef(null);
   
+  const handleVerRemateClick = () => {
+    window.open('/rematemain', '_blank');
+  };
+
   
   useEffect(() => {
     const revealTitle = () => {
@@ -63,28 +63,30 @@ import RemateMain from '../Rematemain/Rematemain.js';
             <div className='row2'>
               <div>
                   <h4 className='destacamos'>Destacamos</h4>
-                  <h4> 1500 TENEROS/ AS DE INVERADA <br></br> 60 VACAS NEGRAS Y COLORADAS<br></br>NUEVAS CON GARANTIA DE PREÑEZ</h4>
+                  <h4 className='hacienda'><strong>1500</strong> terneros/ as de invernada  </h4>
+                  <h4 className='hacienda'><strong>60</strong> vacas negras y coloradas nuevas con garantia de preñez</h4>
               </div>
-              <div>
-                  <h4 className='importante'>IMPORTANTE!<br></br>las haciendas<br></br>deberan ingresar en<br></br>su totalidad el día<br></br>anterior sin<br></br>excepción</h4>
+              <div className='importante-flex'>
+                <img src={importante} alt="Importante" />
+                <h4 className='importante'>IMPORTANTE: <br></br>las haciendas deberan ingresar en su totalidad el día anterior sin excepción</h4>
               </div>
             </div>
             <div className='row3'>
               <div className='column1'>
                 <img src={ubi} alt="Calendario" />
-                <h4>Sociedad rural</h4>
+                <h4 className='sociedadrural'>Sociedad rural</h4>
               </div>
               <div className='column2'>
                 <img src={hora} alt="Calendario" />
-                <h4>13hs</h4>
+                <h4 className='horario'>13hs</h4>
               </div>
               <div className='column3'>
                 <img src={venta} alt="Calendario" />
-                <h4>venta contado y plazo</h4>
+                <h4 className='ventacontado'>venta contado y plazo</h4>
               </div>
             </div>
             <div className='row4'>
-              <h4 className='boton-remate'  >Ver remate</h4>
+              <button className='boton-remate' onClick={handleVerRemateClick}>Ver remate</button>
             </div>
           </div>
         </div>

@@ -265,14 +265,6 @@
   font-family: 'poppins';
 }
 
-button, input, optgroup, select, textarea {
-  padding: 12px;
-  font-size: 30px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  font-family: 'poppins';
-  font-weight: bold;
-}
 
 .carousel-arrow:hover{
   

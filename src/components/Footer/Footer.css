@@ -75,11 +75,55 @@ footer{
     align-items: center;
     gap: 40px;
     background-color: #161616e6;
-    height: 52px;
+    height: 100%;
     
 }
 
 .footer2-nombres{
     display: flex;
     gap: 5px;
+}
+
+@media (max-width: 600px) {
+    iframe{
+        height: 100px;
+    }
+    footer{
+        height: 120px;
+    }
+    .footer-column1, .footer-column2 {
+        margin-left: 20px;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .img-footer {
+        width: 160px;
+        height: auto;
+    }
+    .nuestrasredes {
+        font-size: 0.7rem;
+    }
+    .img-ig, .img-facebook, .img-mail {
+        width: 23px;
+    }
+    .footer2 {
+        flex-direction: column;
+        gap: 0;
+        background-color: #161616e6;
+        height: 100%;
+    }
+    .derechosreservados {
+        font-size: 0.7rem;
+        margin-top: 10px;
+    }
+    .footer2-nombres {
+        display: flex;
+        gap: 0;
+    }
+    .designer-footer, .developer-footer {
+        font-size: 0.7rem;
+        margin: 0;
+    }
+    
+
 }

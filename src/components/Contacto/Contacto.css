@@ -49,7 +49,7 @@ html {
 
 
 input, textarea{
-    padding: 12px;
+    padding: 15px;
     font-size: 15px !important;
     margin-left:0 !important;
     margin-right: 0 !important;
@@ -81,13 +81,7 @@ button, input {
 }
 
 textarea {
-    padding: 12px;
     border-radius: 10px;
-    /* font-size: 30px !important; */
-    /* margin-left: auto !important; */
-    /* margin-right: auto !important; */
-    /* font-family: 'poppins'; */
-    /* font-weight: bold; */
 }
 textarea:focus {
     outline: none; /* Elimina el borde al hacer clic */
@@ -99,7 +93,7 @@ input[type="submit"] {
     margin-right: auto; /* Centra horizontalmente */
   }
   
-  button,
+ 
   input[type="submit"] {
     cursor: pointer;
     border: none;
@@ -152,3 +146,41 @@ input[type="submit"] {
   .toast-success {
     background-color: #32CD32;
   }
+
+
+@media (max-width: 600px) {
+    .title-contacto{
+        font-size: 1rem;
+    }
+    .row-contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:0;
+    }
+    .column2-contacto{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .logoform{
+        width: 150px;
+    }
+    .description-form, .saludos-form , .informacion-contacto h4  {
+        font-size: 0.8rem;
+    }
+    .column1-contacto .column1-contacto-row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 90%;
+    }
+    input{
+        padding: 10px;
+    }
+    textarea {
+        overflow: auto;
+        width: 84%;
+        padding: 10px;
+    }
+}

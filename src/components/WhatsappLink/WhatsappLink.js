@@ -9,12 +9,19 @@ const WhatsappLink = ({ phoneNumber }) => {
   };
 
   return (
+    <div>
     <div className="button-container" onClick={handleClick}>
       <div className="message">
         <FaWhatsapp className="icon" />
         ¿Podemos ayudarte?
       </div>
     </div>
+    <div className="button-container-mobile" onClick={handleClick}>
+      <div className="message-mobile">
+        <FaWhatsapp className="icon-mobile" />
+      </div>
+  </div>
+  </div>
   );
 };
 

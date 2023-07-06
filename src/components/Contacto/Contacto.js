@@ -1,12 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Contacto.css'
-import logoform from '../../images/Logo-form.png'
+import logo from '../../images/logoform.svg'
 import ubiform from '../../images/ubi-form.png'
 import celularform from '../../images/contacto-form.png'
 import emailform from '../../images/email-form.png'
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 
 
 
@@ -66,7 +67,7 @@ const Contacto = () => {
       </h1>
       <div className='row-contacto'>
       <div className='column2-contacto'>
-          <img className='logoform'src={logoform} alt="icono" />
+          <img className='logoform'src={logo} alt="icono" />
           <h4 className='description-form'>Completa nuestro formulario de contacto para<br/>comunicarte con nosotros. Estamos aquí para<br/>ayudarte.</h4>
           <h4 className='saludos-form'>Saludos!</h4>
           <div className='informacion-contacto'>

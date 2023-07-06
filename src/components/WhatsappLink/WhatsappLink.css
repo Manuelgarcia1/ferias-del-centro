@@ -1,3 +1,7 @@
+.button-container-mobile, .message-mobile, .icon-mobile{
+  display: none !important;
+}
+
 .button-container {
     position: fixed;
     right: 30px ;
@@ -31,6 +35,33 @@
     background: #128C7E;
     /* Otros estilos adicionales al pasar el mouse */
   }
+
+  .button-container-mobile {
+    position: fixed;
+    right: 30px;
+    bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    z-index: 9999;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+  } 
+  .message-mobile {
+    background: #25D366;
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  .icon-mobile {
+    font-size: 20px;
+    margin-right: 0;
+  }
   
   @media (max-width: 700px) {
 
@@ -40,5 +71,15 @@
 
     .message{
       font-size: 10px;
+    }
+    .button-container-mobile {
+      right: 10px;
+      bottom: 30px;
+    }
+    .button-container, .message, .icon{
+      display: none;
+    }
+    .button-container-mobile, .message-mobile, .icon-mobile{
+      display: block!important;
     }
   }
