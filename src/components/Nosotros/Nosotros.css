@@ -1,0 +1,240 @@
+.title-nosotros {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 300;
+  }
+  
+.title-nosotros-visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.icon-nosotros{
+  width: 35px;
+  margin-right: 10px;
+}
+
+.column-historia, .column-actualidad{
+    display: flex;
+    align-items: center;
+}
+
+.imagen-historia, .imagen-actualidad{
+    width: 30px;
+}
+
+.nosotros-tittle{
+    font-family: 'poppins';
+    font-size: 18px;
+    margin-left: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.imagen-nosotros{
+    width: 100%;
+    max-height: 500px;
+    border-radius: 10px;
+}
+
+.column-nosotros{
+   width: 70%;
+   margin-left: 10px;
+   margin-bottom: 30px;
+   margin: 0 auto;
+
+}
+
+.column1-nosotros{
+    margin-left: 10px;
+}
+
+.nosotros-parrafo{
+    color: #233C36;
+    font-family: 'poppins';
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.button-ver-mas {
+    display: inline-flex;
+    align-items: center;
+    background-color: #233c36da;
+    color: #ffffff;
+    border: none;
+    padding: 14px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .button-ver-mas:hover {
+    background-color:#1b2e2af1;
+  }
+  
+  .button-ver-menos {
+    display: inline-flex;
+    align-items: center;
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    padding: 14px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .button-ver-menos:hover {
+    background-color: #b02a37;
+  }
+
+.react-tabs__tab--selected {
+    background: none;
+
+}
+.react-tabs__tab[aria-selected="true"] {
+  background: none;
+}
+
+/* Pseudo-elemento para ocultar la línea blanca */
+.react-tabs__tab[aria-selected="true"]::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+}
+
+.row-nosotros{
+    display: flex;
+    justify-content: center;
+}
+
+.row-nosotros-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-nosotros{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.nosotros-contactanos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactanos-title{
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-family: 'poppins';
+    color: #233C36;
+    font-weight: 700;
+}
+
+.contactanos-parrafo{
+    max-width: 800px;
+    font-family: 'poppins';
+    color: #233C36;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.mensaje-final{
+    margin-top: 5px;
+    font-family: 'poppins';
+    font-weight: 700;
+}
+
+.nosotros-mapa{
+    display: flex;
+    align-items: center;
+    display: flex;
+    padding: 5px 16px;
+    border-radius: 4px;
+    align-items: center;
+    font-family: 'poppins';
+    color: #ffff;
+    background-color:#333;
+    border: none;
+    cursor: pointer;
+}
+
+.iconmapa{
+    width: 25px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.maps {
+    color: inherit;
+    text-decoration: none;
+    /* Otros estilos que desees aplicar al enlace */
+  }
+
+@media (max-width: 550px) {
+    .title-nosotros{
+        font-size: 18px;
+    }
+    
+    .react-tabs__tab-list {
+        display: flex;
+    }
+    .img-nosotros {
+        min-width: 360px;
+        height: auto;
+        border-radius: 10px;
+    }
+    .nosotros-tittle {
+        font-size: 10px;
+        text-align: center;
+    }
+    .contactanos-title{
+        font-size: 14px;
+        text-align: center;
+    }
+    .imagen-historia, .imagen-actualidad {
+        width: 20px;
+    }
+    .nosotros-parrafo, .contactanos-parrafo {
+        line-height: none;
+        font-size: 14px;
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .contactanos-parrafo{
+        width: auto;
+    }
+    .mensaje-final{
+        margin-bottom: 10px;
+    }
+    .nosotros-mapa{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .iconmapa{
+        width: 20px;
+    }
+    .maps {
+        font-size: 14px;
+    }
+}

@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Contacto.css'
-import logo from '../../images/logoform.svg'
-import ubiform from '../../images/ubi-form.png'
-import celularform from '../../images/contacto-form.png'
-import emailform from '../../images/email-form.png'
+import logo from '../../images/Contacto/logoform.svg'
+import ubiform from '../../images/Contacto/ubi-form.png'
+import emailform from '../../images/Contacto/email-form.png'
+import emailtitle from '../../images/Contacto/email2.svg'
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -63,6 +63,7 @@ const Contacto = () => {
   return (
     <div>
       <h1 ref={titleRef} className='title-contacto' id='Contacto'>
+        <img className='email-title' src={emailtitle} alt="Descripción de la imagen" />
         Contacto
       </h1>
       <div className='row-contacto'>
@@ -71,9 +72,8 @@ const Contacto = () => {
           <h4 className='description-form'>Completa nuestro formulario de contacto para<br/>comunicarte con nosotros. Estamos aquí para<br/>ayudarte.</h4>
           <h4 className='saludos-form'>Saludos!</h4>
           <div className='informacion-contacto'>
-            <h4><img src={ubiform} alt='ubicacion'></img>Av.Brown</h4>
+            <h4><img src={ubiform} alt='ubicacion'></img>Av.Brown 355, Bolívar Bs As.</h4>
             <h4><img src={emailform} alt='ubicacion'></img>info@feriasdelcentro.com</h4>
-            <h4><img src={celularform} alt='ubicacion'></img>+54 2314 584083</h4>
           </div>
         </div>
         <div className='column1-contacto'>

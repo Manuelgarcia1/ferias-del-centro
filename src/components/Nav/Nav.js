@@ -2,10 +2,10 @@ import React, { useState, useRef} from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './Navbar.css';
-import vacasImage from '../../images/vacas1.jpg';
-import navbar from '../../images/Logo-navbar.png';
-import mapas from '../../images/ubicacion.png'
-import carousel from '../../images/Logo-main.png'
+import vacasImage from '../../images/Nav/vacas1.jpg';
+import navbar from '../../images/Nav/Logo-navbar.png';
+import mapas from '../../images/Nav/ubicacion.png'
+import carousel from '../../images/Nav/Logo-main.png'
 
 
 const carouselTexts = [
@@ -100,7 +100,7 @@ function Nav() {
           </div>
           <div className='navbar-section'>
             <a href="#Inicio">Inicio</a>
-            <a href="/">Nosotros</a>
+            <a href="#Nosotros">Nosotros</a>
             <a href="#Remates">Remates</a>
             <a href="#Contacto">Contacto</a>
           </div>
@@ -108,7 +108,7 @@ function Nav() {
         {menuVisible && (
           <nav className="MobileNavbar">
             <a href="#Inicio">Inicio</a>
-            <a href="/">Nosotros</a>
+            <a href="#Nosotros">Nosotros</a>
             <a href="#Remates">Remates</a>
             <a href="#Contacto">Contacto</a>
           </nav>

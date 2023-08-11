@@ -1,9 +1,4 @@
 
-html {
-    scroll-behavior: smooth;
-}
-
-
 .title-contacto {
     opacity: 0;
     transform: translateX(-50%);
@@ -14,6 +9,7 @@ html {
     justify-content: center;
     align-items: center;
     font-size: 30px;
+    font-weight: 300;
   }
   
 .title-contacto-visible {
@@ -21,14 +17,26 @@ html {
     transform: translateX(0);
 }
 
+.email-title{
+    width: 45px;
+    margin-right: 5px;
+}
+
 .row-contacto{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 100px;
+    margin-bottom: 50px;
 }
 
 .column1-contacto{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.column2-contacto{
     display: flex;
     flex-direction: column;
 }
@@ -38,7 +46,8 @@ html {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin-top: 25px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .column1-contacto .column1-contacto-row{
@@ -82,6 +91,7 @@ button, input {
 
 textarea {
     border-radius: 10px;
+    height: 300px;
 }
 textarea:focus {
     outline: none; /* Elimina el borde al hacer clic */
@@ -148,20 +158,28 @@ input[type="submit"] {
   }
 
 
-@media (max-width: 600px) {
+
+@media (max-width: 810px) {
     .title-contacto{
         font-size: 1rem;
     }
+    .email-title{
+        width: 25px;
+        margin-right: 5px;
+    }
+    
     .row-contacto {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap:0;
+        width: 300px;
+        margin: 0 auto;
     }
     .column2-contacto{
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
+        width: 100%;
     }
     .logoform{
         width: 150px;
@@ -173,14 +191,12 @@ input[type="submit"] {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        width: 90%;
+        width: 100%;
     }
     input{
         padding: 10px;
     }
-    textarea {
-        overflow: auto;
-        width: 84%;
-        padding: 10px;
+    textarea{
+        width: 90%;
     }
 }

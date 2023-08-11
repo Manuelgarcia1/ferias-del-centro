@@ -1,8 +1,7 @@
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Secular+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100&family=Secular+One&display=swap');
+
 
 .imagen-nav {
   position: relative;
@@ -210,8 +209,7 @@
 }
 
 .fa-map-marker-alt{
-  margin-left: 15px;
-  width: 35px;
+  margin-left: 25px;
   height:50px !important;
   color: #efd79b !important;
   font-size: 35px !important;
@@ -253,10 +251,12 @@
 .carousel-ubicacion{
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-bottom: 10px;
   position: relative;
   bottom: 45px;
   right: 20px;
+  
 }
 
 .carousel-ubicacion h4{

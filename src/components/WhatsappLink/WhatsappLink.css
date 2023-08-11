@@ -63,6 +63,72 @@
     margin-right: 0;
   }
   
+  .modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .modal h3{
+    text-align: center;
+    font-family: 'poppins';
+  }
+  
+  .opcion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+  
+  .opcion button {
+    color: black;
+    align-items: center;
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 900;
+    font-family: 'poppins';
+    padding: 25px 16px;
+    cursor: pointer;
+}
+  
+  .opcion button:hover {
+    background-color: #128c7e;
+  }
+  
+  .close-btn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 16px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .close-btn:hover {
+    background-color: #c82333;
+  }
+
   @media (max-width: 700px) {
 
     .button-container{
@@ -81,5 +147,9 @@
     }
     .button-container-mobile, .message-mobile, .icon-mobile{
       display: block!important;
+    }
+    .message-mobile{
+      border-radius: 25px;
+      padding: 10px;
     }
   }

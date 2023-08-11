@@ -1,11 +1,11 @@
 import React from 'react';
 import './Footer.css';
-import imagenfooter from '../../images/Logo-main.png'
-import ig from '../../images/INSTAGRAM.svg'
-import mail from '../../images/GMAIL.svg'
-import facebook from '../../images/FACEBOOK.svg'
-import designer from '../../images/designer.svg'
-import developer from '../../images/developer.svg'
+import imagenfooter from '../../images/Footer/Logo-main.png'
+import ig from '../../images/Footer/INSTAGRAM.svg'
+import mail from '../../images/Footer/GMAIL.svg'
+import facebook from '../../images/Footer/FACEBOOK.svg'
+import designer from '../../images/Footer/designer.svg'
+import developer from '../../images/Footer/developer.svg'
 
 
 const Footer = () => {
@@ -18,18 +18,7 @@ const Footer = () => {
   
 
   return (
-    <div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3218.527708682464!2d-61.112106284277544!3d-36.226672914814706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bfe3aca4a8acff%3A0x7e445efeccd9b9a4!2sFerias%20del%20Centro!5e0!3m2!1ses!2sar!4v1687544297990!5m2!1ses!2sar"
-        width="100%"
-        height="195"
-        style={{ border: 0, marginTop: '40px', backgroundColor:'#ECE7E4'}}
-        allowFullScreen=""
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-        title="Google Maps"
-        margin-top="20px"
-      ></iframe>
+    <div>   
       <footer>
           <div className='footer-row'>
             <div className='footer-column1'>
@@ -55,8 +44,18 @@ const Footer = () => {
       <footer className='footer2'>
         <h4 className='derechosreservados'>© Todos los derechos reservados</h4>  
         <div className='footer2-nombres'>
-          <h4 className='developer-footer'><img className='developer-img' src={developer} alt='developerfooter'></img>Manuel Alejandro García</h4>
-          <h4 className='designer-footer'><img className='designer-img' src={designer} alt='developerfooter'></img>Ignacio Murgades Manso</h4> 
+        <h4 className='developer-footer'>
+           <a className='link-wsp' href="https://api.whatsapp.com/send?phone=5492314464231">
+            <img className='developer-img' src={developer} alt='developerfooter' />
+             Manuel Alejandro García
+           </a>
+        </h4>
+        <h4 className='designer-footer'>
+          <a className='link-wsp' href="https://api.whatsapp.com/send?phone=5492314574384">
+            <img className='designer-img' src={designer} alt='developerfooter' />
+            Ignacio Murgades Manso
+          </a>
+        </h4>
         </div>
       </footer>
     </div>

@@ -1,0 +1,265 @@
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+
+.carousel *{
+    margin-right: 10px;
+}
+
+.volver-btn-container {
+    position: relative;
+    display: none; /* Posición relativa para el contenedor */
+  }
+  
+  /* Estilos para el botón "Volver atrás" */
+  .volver-btn {
+    position: fixed; /* Posición absoluta para el botón */
+    top: 5px; /* Ajusta la posición superior según tu diseño */
+    left: 5px; /* Ajusta la posición derecha según tu diseño */
+    padding: 10px 10px;
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el botón */
+    z-index: 10; /* Asegura que el botón esté por encima de otros elementos */
+  }
+  
+  .volver-btn:hover {
+    background-color: rgba(0, 123, 255, 0.349); /* Cambia el color de fondo al pasar el mouse */
+  }
+
+.rematemain-img{
+    width: 100%;
+    height: auto;
+    image-rendering: auto;
+    
+}
+
+.description-foto{
+    background: #233c36d6;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    bottom: 103px;
+    font-family: 'poppins';
+    height: 80px;
+}
+
+.remateferia{
+    margin-left: 60px;
+}
+
+.rematefecha{
+    margin-right: 60px;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.description-foto .remateferia{
+    font-size: 30px;
+}
+
+.remate-fecha-calendario{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.fecha-img{
+    width: 30px;
+}
+
+.remate-description{
+    margin: 0;
+    position: relative;
+    bottom: 60px;
+}
+
+.acerca-remate {
+    font-family: 'Poppins';
+    text-align: center;
+    font-weight: 800;
+    color: #233C36;
+    font-size: 22px;
+    margin: 15px;
+}
+.parrafo {
+    text-align: center; /* Centrar el texto en el medio */
+    line-height: 1.5; /* Espaciado entre líneas */
+    margin: 0 auto; /* Centrar horizontalmente */
+    max-width: 900px; /* Ajusta el ancho máximo según tus necesidades */
+    font-family: 'poppins';
+    color: #233C36;
+}
+
+.remate-participa{
+    margin: 0;
+}
+
+.background{
+    background-color: #233C36;
+    height: 300px;
+    display: flex; 
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    color: #ffff;
+    font-family: 'poppins';
+    text-align: center;
+}
+
+.texto1{
+    font-size: 18px;
+}
+
+.texto2{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+.boton-participar {
+    border: none;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 40px;
+    padding: 20px 10px;
+    align-items: center;
+    display: flex;
+    color: rgba(0, 0, 0, 0.742);
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: 'poppins';
+    font-weight: 600;
+    margin-bottom: 10px;
+    background-color: #efd79b;
+    cursor: pointer;
+}
+
+.title-galeria{
+    font-family: 'poppins';
+    color: #233C36;
+    text-align: center;
+    font-size: 18px;
+}
+
+.carousel-arrow.prev {
+    border-radius: 25%;
+    left: 0;
+    z-index: 1;
+    left: 0px;
+}
+.carousel-arrow.next {
+   right: 0;
+}
+
+.carousel .thumbs{
+    display: flex;
+    justify-content: center;
+}
+.carousel .thumb:focus {
+    transform: scale(1.2); /* Aumenta el tamaño de la miniatura activa */
+    /* Agrega otros estilos que desees para resaltar la miniatura */
+  }
+  
+  /* Opcionalmente, puedes agregar una transición suave para el efecto */
+  .carousel .thumb {
+    transition: transform 0.2s ease; /* Agrega una transición de 0.2 segundos suave */
+  }
+
+.carousel .thumbs .selected{
+    border-color: none; /* Color del borde al seleccionar */
+    border: none;
+}
+.carousel .thumb:hover {
+    /* Eliminamos los estilos que se aplican al pasar el mouse sobre la miniatura */
+    border-color: transparent; /* Opcionalmente, establece el color del borde a transparente */
+    /* Puedes eliminar cualquier otro estilo que desees */
+}
+
+
+.carousel .thumb {
+    border: none; /* Elimina los bordes de las miniaturas */
+  }
+
+
+.galeria-imagenes {
+    max-width: 1400px; /* Ancho máximo para versiones no móviles */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .imagen-container {
+    width: calc(100% / 3); /* Para mostrar 3 imágenes por fila en versiones no móviles */
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .imagen-carousel {
+    width: 600px !important;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+@media (max-width: 730px) {
+    .volver-btn-container{
+        display: block;
+    }
+    .vaca-img {
+        width: 160px;
+        height: 160px;
+    }
+    .texto1, .texto2 {
+        font-size: 12px;
+    }
+    .boton-participar {
+        padding: 15px 15px;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .background {
+        align-items: center;
+    }
+    .description-foto .remateferia {
+        font-size: 14px;
+    }
+
+    .description-foto{
+        bottom: 54px;
+        height: 20px;
+    }
+    .remateferia, .rematefecha{
+        font-size: 14px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .fecha-img {
+        width: 18px;
+    }
+    .remate-description{
+        bottom: 40px;
+    }
+
+    .parrafo{
+        font-size: 14px;
+        text-align:start;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+  
+   
+         
+    
+}
